@@ -1,0 +1,7 @@
+import {{pascalCase componentName}} from "./{{pascalCase componentName}}"
+import {render, screen} from "@testing-library/react"
+
+test("renders", () => {
+    render(<{{pascalCase componentName}} />)
+    expect(screen.getByText("{{pascalCase componentName}}"))
+})

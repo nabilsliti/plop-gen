@@ -1,0 +1,13 @@
+import { Component, ComponentInterface, JSX } from '@stencil/core';
+
+@Component({
+    tag: '{{dashCase componentName}}',
+    styleUrl: './{{dashCase componentName}}.scss',
+    shadow: true,
+})
+export class {{pascalCase componentName}} implements ComponentInterface {
+
+    render(): JSX.Element {
+        return (<div> I'm {{pascalCase componentName}} component </div>);
+    }
+}

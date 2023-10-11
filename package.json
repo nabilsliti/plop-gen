@@ -1,0 +1,54 @@
+{
+  "name": "plop-gen",
+  "version": "1.0.0",
+  "description": "A tool that gives you a simple way to generate your react, angular, vue and stencil components",
+  "bin": {
+    "pgen": "./src/pgen.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabilsliti/plop-gen.git"
+  },
+  "keywords": [
+    "plop",
+    "build",
+    "react",
+    "angular",
+    "vue",
+    "stencil",
+    "component",
+    "generate",
+    "cli",
+    "cli-app",
+    "node",
+    "generator",
+    "scaffold",
+    "scaffolding",
+    "make",
+    "gen",
+    "template",
+    "yeoman",
+    "tool"
+  ],
+  "author": {
+    "name": "Nabil Sliti",
+    "email": "nabil.sliti.pro@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nabilsliti/plop-gen/issues"
+  },
+  "homepage": "https://github.com/nabilsliti/plop-gen#readme",
+  "dependencies": {
+    "boxen": "^4.2.0",
+    "chalk": "^2.4.2",
+    "globby": "^11.1.0",
+    "inquirer-directory": "^2.2.0",
+    "liftoff": "^2.2.0",
+    "minimist": "^1.2.0",
+    "node-plop": "^0.26.3"
+  },
+  "engines": {
+    "node": ">=8.9.4"
+  }
+}

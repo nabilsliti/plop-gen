@@ -1,0 +1,20 @@
+import { mount } from '@vue/test-utils';
+import {{pascalCase componentName}} from './{{pascalCase componentName}}.vue';
+
+describe('{{pascalCase componentName}}', () => {
+    let wrapper;
+
+    beforeEach(() => {
+        wrapper = mount({{pascalCase componentName}});
+    });
+
+    afterEach(() => {
+        wrapper.destroy();
+    });
+
+    it('renders properly', () => {
+        expect(wrapper.exists()).toBe(true);
+    });
+
+  // Add more test cases here
+});

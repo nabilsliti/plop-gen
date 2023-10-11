@@ -1,0 +1,14 @@
+import {FC} from "react"
+import styles from "./{{pascalCase componentName}}.module.css"
+
+type {{pascalCase componentName}}Props = {}
+
+const {{pascalCase componentName}}: FC<{{pascalCase componentName}}Props> = () => {
+    return (
+        <div className={ styles.{{camelCase componentName}} }>
+            I'm {{pascalCase componentName}} component
+        </div>
+    )
+}
+
+export default {{pascalCase componentName}}
