@@ -1,10 +1,9 @@
-'use strict';
 const chalk = require('chalk');
 const fs = require('fs');
 
 module.exports = function createPlopFile(env) {
-	try {
-		const content = `module.exports = function (plop) {
+    try {
+        const content = `module.exports = function (plop) {
 	plop.setGenerator('controller', {
 		description: 'application controller',
 
@@ -24,9 +23,10 @@ module.exports = function createPlopFile(env) {
 	});
 		
 }`;
-	fs.writeFileSync(`${ env.cwd }/plopfile.js`, content);
-		console.log(chalk.green('[SUCCESS]'), 'The plopfile has been created');
-	} catch (err) {
-		console.error(err);
-	}
+        fs.writeFileSync(`${ env.cwd }/plopfile.js`, content);
+        console.log(chalk.green('[SUCCESS]'), 'The plopfile has been created');
+    } catch (err) {
+        console.error(chalk.red('[ERROR]'), err.message);
+        process.exit(1);
+    }
 };

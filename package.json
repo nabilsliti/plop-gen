@@ -1,13 +1,17 @@
 {
   "name": "plop-gen",
   "version": "1.0.0",
-  "description": "A tool that gives you a simple way to generate your react, angular, vue and stencil components",
+  "description": "A tool based on plop.js that gives you a simple way to generate your react, angular, vue and stencil components",
   "bin": {
     "pgen": "./src/pgen.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nabilsliti/plop-gen.git"
+  },
+  "scripts": {
+    "lint": "eslint ./src/",
+    "lint.fix": "eslint ./src/ --fix"
   },
   "keywords": [
     "plop",
@@ -45,10 +49,13 @@
     "globby": "^11.1.0",
     "inquirer-directory": "^2.2.0",
     "liftoff": "^2.2.0",
+    "lodash": "^4.17.21",
     "minimist": "^1.2.0",
     "node-plop": "^0.26.3"
   },
-  "engines": {
-    "node": ">=8.9.4"
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1"
   }
 }

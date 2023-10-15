@@ -1,0 +1,94 @@
+{
+    "env": {
+        "commonjs": true
+    },
+    "extends": "airbnb-base",
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "no-console": 0,
+        "no-unused-vars": 2,
+        "linebreak-style": 0,
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        "curly": 2,
+        "no-octal-escape": 2,
+        "comma-spacing": 2,
+        "arrow-body-style": ["error", "as-needed"],
+        "indent": ["error", 4, { "SwitchCase": 1 } ],
+        "max-len": [
+            "error",
+            {
+                "code": 140
+            }
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "computed-property-spacing": [
+            "error",
+            "always"
+        ],
+        "array-bracket-spacing": [
+            "error",
+            "always"
+        ],
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "template-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 1,
+                "maxBOF": 1
+            }
+        ],
+        "semi": [
+            "error",
+            "always",
+            {
+                "omitLastInOneLineBlock": true
+            }
+        ],
+        "eqeqeq": [
+            "error",
+            "always"
+        ],
+        "no-extra-boolean-cast": "off",
+        "no-trailing-spaces":[
+            "error",
+            {
+                "skipBlankLines": false,
+                "ignoreComments": false
+            }
+        ],
+        "no-empty": ["error", { "allowEmptyCatch": true }],
+        "no-useless-escape": "off",
+        "key-spacing": ["error", { "beforeColon": false }],
+        "keyword-spacing": 2,
+        "space-infix-ops": 2,
+        "no-multi-spaces": 2,
+        "space-before-blocks": 2,
+        "space-before-function-paren": ["error", {
+            "anonymous": "always",
+            "named": "never",
+            "asyncArrow": "always"
+        }],
+        "arrow-spacing": 2,
+        "space-in-parens": ["error", "never"],
+        "no-tabs": ["error", { "allowIndentationTabs": true }]
+    }
+}
