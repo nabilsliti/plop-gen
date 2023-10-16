@@ -1,6 +1,6 @@
 {
   "name": "plop-gen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A tool based on plop.js that gives you a simple way to generate your react, angular, vue and stencil components",
   "bin": {
     "pgen": "./src/pgen.js"
